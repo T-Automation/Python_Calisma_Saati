@@ -1,0 +1,188 @@
+#Basit toplama islemi
+>>> 2+2
+4
+
+#Degiskene deger atama 
+>>> a = 3
+>>> a
+3
+>>> a = 'string'
+>>> a= []
+
+#yorum satiri
+>>> #burda yazdiginiz hersey yorumdur
+
+#Degiskenlerin turlerine bakma ->type()
+>>> a= 123123123123123123123123123123123123123132
+>>> type(a)
+<class 'int'>
+
+#floatlar uzerinde islemler
+>>> 3.23
+3.23
+>>> type(3.23)
+<class 'float'>
+
+#kesirli sayiyi tam sayiya cevirme
+>>> int(3.23)
+3
+>>> int(3.83)
+3
+>>> round(3.8)
+4
+
+#3 tirnak kullanimi
+>>> a = """asdfasdfsadfasdfa
+... asdasdasdasdasdsa
+... 111111111"""
+>>> a
+'asdfasdfsadfasdfa\nasdasdasdasdasdsa\n111111111'
+>>> type(a)
+<class 'str'>
+
+#String icerisinde tirnak kullanimi
+>>> a = 'i'm asdfasd'
+  File "<input>", line 1
+    a = 'i'm asdfasd'
+           ^
+SyntaxError: invalid syntax
+>>> a= "i'm sadfasdf"
+>>> a
+"i'm sadfasdf"
+>>> a= """random/'"random"""
+>>> a
+'random/\'"random'
+
+#  degisken icerisinde ve print icerisinde ozel karekterlertin kullanimi (\n \t)
+>>> a = 1
+>>> a= 'buralar\nahep\tdeneme'
+>>> b = 3
+>>> c= 6
+>>> print(a, b,c)
+buralar
+ahep	deneme 3 6
+>>> print(a, b,c, sep='\n')
+buralar
+ahep	deneme
+3
+6
+>>> print(a, b,c, sep=',')
+buralar
+ahep	deneme,3,6
+>>> print(a, b,c, sep='ffff')
+buralar
+ahep	denemeffff3ffff6
+>>> print(a, '\n', b, c)
+buralar
+ahep	deneme 
+ 3 6
+>>> print(a, '\n', b, c, sep='')
+buralar
+ahep	deneme
+36
+
+#asagidaki ornekte 2 tane enter vardir birisi '\n' den gelir digeri ise print defaultta enter ile biter. -> print(end='\n')
+>>> print('\n')
+
+
+>>> x= '\n'
+>>> print(x)
+
+
+# \n i yazdirma
+>>> print('''\\n''')
+\n
+>>> print('\\n')
+\n
+
+# stringler arasinda toplama islemi
+>>> 'a'+'b'
+'ab'
+>>> degisken1 = 'string'
+>>> degisken2 = 'string1'
+>>> degisken1 +degisken2
+'stringstring1'
+
+>>> degisken1 = '23'
+>>> degisken2 = '10'
+>>> degisken1 + degisken2
+'2310'
+
+#stringler arasinda carpma islemi
+>>> 'a'*5
+'aaaaa'
+
+
+#Degisken tiplerini degistirme
+>>> int(degisken1)
+23
+>>> type(degisken1)
+<class 'str'>
+>>> type(int(degisken1))
+<class 'int'>
+
+>>> degisken1 = int(degisken1)
+>>> degisken1
+23
+>>> type(degisken1)
+<class 'int'>
+
+>>> degisken1 = int(degisken1)
+>>> degisken1
+23
+>>> degisken1 + 4 
+27
+>>> print(degisken1)
+23
+>>> degisken2
+'10'
+
+
+#iki degiskenin degerlerini degistirme
+>>> degisken1
+'10'
+>>> degisken2
+23
+>>> degisken3 = degisken1
+>>> degisken1 = degisken2
+>>> degisken2 = degisken3
+>>> degisken1
+23
+>>> degisken2
+'10'
+
+>>> degisken1, degisken2 = degisken2, degisken1
+>>> degisken1
+'10'
+>>> degisken2
+23
+
+#degisken ismi olarak kullanilamayan kelimeler
+>>> ['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del',
+... 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal',
+... 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+>>> False = 3
+  File "<input>", line 1
+SyntaxError: cannot assign to False
+>>>  a= 3
+  File "<input>", line 1
+    a= 3
+    ^
+IndentationError: unexpected indent
+
+#print ve formatin kullanimi    
+>>> print('isim ne:{}-----'.format(degisken1))
+isim ne:10-----
+>>> print(f'isim ne:{degisken1}')
+isim ne:10
+>>> print(f'isim ne:{degisken1}{degisken2}')
+isim ne:1023
+>>> print(f'isim ne:{degisken1}{degisken2}')
+isim ne:1023
+>>> print(f'isim ne:{degisken1}{degisken2+123}')
+isim ne:10146
+
+
+
+
