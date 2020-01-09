@@ -1,0 +1,8 @@
+
+
+1/	ip_adres_listesi.txt dosyasina icindeki formatta istediginiz sayida cihazin ip adresini giriniz
+2/	python show_run_kaydet.py komutuyla python dosyasini kosturunuz\
+3/	path_file degiskeniyle ip_adres_listesi.txt icin bakilacak, ve sonuc dosyalarinin kaydedilecegi dizini secebilirsiniz
+
+kolay gelsin.
+
