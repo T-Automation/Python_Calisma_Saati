@@ -1,0 +1,3 @@
+Name	ip	ip address 10.130	no ip route-cache
+TR-YAP-BZYKARTMNTJ-SW-2	10.130.2.40	Farkli:ip address 10.130.2.40 255.255.255.0	Var	
+TR-YAP-BZYKARTTPM2-SW-1	10.130.2.53	Yok	Yok	

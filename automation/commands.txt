@@ -1,0 +1,4 @@
+no spanning-tree optimize bpdu transmission
+interface Vlan1
+   ip address 10.130
+   no ip route-cache
